@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Meu Mercado</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="./js/funcoes.js"></script>
+
+    <style>
+        #fProdutos {
+            width: 480px;
+            margin-left: 30%;
+            margin-top: 3%;
+        }
+        tr:hover {cursor: pointer;}
+    </style>	
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">MeuMercado</h6>
+            <small class="text-white">Estoque</small>
+        </div>
+        <a href="./login.html"><button>login</button></a>
+        
+    </nav>
+
+    <br />
+    <br />
+
+    <div id="lista">
+
+        <table id="tbProdutos" class="table table-striped">
+            <thead class="thead-dark">
+                <input type="text" id="ibusca" placeholder="Buscar..."> 
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Estoque</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+	<script type="text/javascript">	
+	   adicionaBuscaListener(); 
+       produtosInit();	
+	</script>
+	
+</body>
+
+</html>
+

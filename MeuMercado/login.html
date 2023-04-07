@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="./js/funcoes.js"></script>
+
+    
+</head>
+
+<style>
+    *{margin:0; padding:0; box-sizing: border-box;}
+
+    .box{
+        background-color: #5F7CBA;
+        max-width: 500px;
+        width: 70%;
+        padding: 15px;
+        position: absolute;
+        left: 50%;
+        top: 63%;
+        transform: translate(-50%, -50%);
+    }
+
+    form{
+        background-color: #5F7CBA;
+        max-width: 500px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    form h3{
+        text-align: center;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
+    }
+
+    form input[type=text],
+    form input[type=password]{
+        width: 100%;
+        height: 45px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+    }
+
+    form input[type=text]:focus{
+        outline: 0;
+    }
+
+    form input[type=password]:focus{
+        outline: 0;
+    }
+
+    form button{
+        width: 100%;
+        height:40px;
+        cursor: pointer;
+        background: white;
+        color: #5F7CBA;
+        border: 0;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    form button:hover{
+        background-color: #4A5F6A;
+    }
+    
+    button{
+        width: 100%;
+        height:40px;
+        cursor: pointer;
+        background: white;
+        color: #5F7CBA;
+        border: 0;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    button:hover{
+        background-color: #4A5F6A;
+    }
+
+    
+</style>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">MeuMercado</h6>
+            <small class="text-white">Login</small>
+        </div>
+    </nav>
+
+    <div>
+        <form>
+            <h3>CONECTAR-SE</h3>
+            <input id="usuario" type="text" name="usuario" placeholder="Usuário">
+            <input id="senha" type="password" name="senha" placeholder="Senha">
+        </form>
+        <div class="box">
+            <button onclick="logar()">Enviar</button>
+        </div>
+        
+    </div>
+</body>
+
+</html>
+
